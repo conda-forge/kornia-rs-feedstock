@@ -3,7 +3,7 @@ set -ex
 # Bundle all downstream library licenses
 cargo-bundle-licenses \
   --format yaml \
-  --output ${SRC_DIR}/THIRDPARTY_LICENSES.yaml
+  --output THIRDPARTY_LICENSES.yaml
 
 maturin build -i $PYTHON --release
 
