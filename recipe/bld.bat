@@ -7,7 +7,7 @@ cargo-bundle-licenses ^
     --output %SRC_DIR%\THIRDPARTY_LICENSES.yaml ^
     || goto :error
 REM Build the wheels
-maturin build --release -i %PYTHON%
+maturin build --release -i %PYTHON% -m kornia-py/Cargo.toml
 REM Install wheel
 cd kornia-py/target/wheels
 REM set UTF-8 mode by default
