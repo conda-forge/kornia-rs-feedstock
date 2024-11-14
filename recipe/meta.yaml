@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/kornia/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 601aeacd17826d3a796e847d558d9e32c08aa686653eb21b2f93031438af93a1
+  sha256: 547a01735791de4afcfcd6e01de8a72bca5539c3b88857770edaa9d45b7bd728
 
 build:
   number: 0
