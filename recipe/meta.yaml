@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kornia_rs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kornia_rs-{{ version }}.tar.gz
   sha256: 00520988740e9de1682f2f682caecb9b740d2489f3fbbb1ca0b6fc56af70d298
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
