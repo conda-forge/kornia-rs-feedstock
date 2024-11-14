@@ -30,6 +30,7 @@ requirements:
     - libjpeg-turbo
     - nasm
     - libglib
+    - gobject-introspection
   run:
     - python
 
