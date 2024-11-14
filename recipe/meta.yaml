@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('rust') }}
     - {{ stdlib("c") }}
     - make
+    - pkg-config
     - cmake
     - cargo-bundle-licenses
   host:
