@@ -3,9 +3,9 @@ set -ex
 # Bundle all downstream library licenses
 cargo-bundle-licenses \
   --format yaml \
-  --output THIRDPARTY_LICENSES.yaml
+  --output ${SRC_DIR}/THIRDPARTY_LICENSES.yaml
 
-maturin build -i $PYTHON --release
+maturin build -i $PYTHON --release -m kornia-py/Cargo.toml
 
 cd kornia-py/target/wheels
 
