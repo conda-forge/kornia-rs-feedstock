@@ -29,6 +29,7 @@ requirements:
     - gstreamer
     - libjpeg-turbo
     - nasm
+    - libglib
   run:
     - python
 
