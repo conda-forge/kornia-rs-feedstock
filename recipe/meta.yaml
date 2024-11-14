@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kornia_rs-{{ version }}.tar.gz
+  url: https://github.com/kornia/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 601aeacd17826d3a796e847d558d9e32c08aa686653eb21b2f93031438af93a1
 
 build:
@@ -22,7 +22,7 @@ requirements:
     - cmake
     - cargo-bundle-licenses
   host:
-    - python <3.13
+    - python
     - maturin >=1.3.2
     - pip
     - gstreamer
