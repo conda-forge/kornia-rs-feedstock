@@ -35,6 +35,8 @@ requirements:
     - gtk3
   run:
     - python
+    - gstreamer
+    - gst-plugins-base {{ gstreamer }}
 
 test:
   imports:
