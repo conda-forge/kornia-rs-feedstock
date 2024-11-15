@@ -37,6 +37,8 @@ requirements:
     - python
     - gstreamer
     - gst-plugins-base {{ gstreamer }}
+    - glib
+    - gtk3
 
 test:
   imports:
