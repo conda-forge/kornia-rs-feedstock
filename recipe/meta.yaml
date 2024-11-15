@@ -30,7 +30,8 @@ requirements:
     - gstreamer
     - libjpeg-turbo
     - nasm
-    - glib <=2.80
+    - glib
+    - gtk3
   run:
     - python
 
