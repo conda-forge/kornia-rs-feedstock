@@ -5,7 +5,7 @@ cargo-bundle-licenses \
   --format yaml \
   --output ${SRC_DIR}/THIRDPARTY_LICENSES.yaml
 
-maturin build -i $PYTHON --release -m kornia-py/Cargo.toml
+maturin build -i $PYTHON --release --auditwheel skip -m kornia-py/Cargo.toml
 
 cd kornia-py/target/wheels
 
