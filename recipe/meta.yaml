@@ -10,11 +10,13 @@ source:
   sha256: 547a01735791de4afcfcd6e01de8a72bca5539c3b88857770edaa9d45b7bd728
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py>312]
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler("c") }}
     - {{ compiler("cxx") }}
     - {{ compiler('rust') }}
