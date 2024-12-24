@@ -34,7 +34,6 @@ requirements:
     - libjpeg-turbo
     - nasm
     - glib
-    - gtk3
   run:
     - python
 
