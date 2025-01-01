@@ -32,6 +32,9 @@ requirements:
     - gstreamer
     - gst-plugins-base {{ gstreamer }}
     - nasm
+    - gtk3
+    - glib
+    - libjpeg-turbo
   run:
     - python
 
