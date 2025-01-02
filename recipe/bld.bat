@@ -2,10 +2,12 @@ REM Create temp folder
 mkdir tmpbuild_%PY_VER%
 set TEMP=%CD%\tmpbuild_%PY_VER%
 REM Bundle all downstream library licenses
+pushd crates\kornia
 cargo-bundle-licenses ^
     --format yaml ^
     --output %SRC_DIR%\THIRDPARTY_LICENSES.yaml ^
     || goto :error
+popd
 REM Build the wheels
 maturin build --release -i %PYTHON% --auditwheel skip -m kornia-py/Cargo.toml
 REM Install wheel

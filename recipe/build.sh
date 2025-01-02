@@ -1,13 +1,13 @@
 set -ex
 
+pushd crates/kornia
 # Bundle all downstream library licenses
 cargo-bundle-licenses \
   --format yaml \
   --output ${SRC_DIR}/THIRDPARTY_LICENSES.yaml
+popd
 
-maturin build -i $PYTHON --release --auditwheel skip -m kornia-py/Cargo.toml
-
-cd kornia-py/target/wheels
-
-# Install wheel manually
-$PYTHON -m pip install *.whl
+# Run the maturin build via pip which works for direct and
+# cross-compiled builds.
+cd kornia-py
+$PYTHON -m pip install . -vv
