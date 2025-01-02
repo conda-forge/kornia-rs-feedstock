@@ -9,4 +9,5 @@ popd
 
 # Run the maturin build via pip which works for direct and
 # cross-compiled builds.
+cd kornia-py
 $PYTHON -m pip install . -vv
