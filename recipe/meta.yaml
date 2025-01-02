@@ -33,6 +33,7 @@ requirements:
     - nasm
     - glib
     - gtk3
+    - gdk-pixbuf # [osx_arm64]
   run:
     - python
 
