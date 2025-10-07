@@ -1,6 +1,8 @@
 REM Create temp folder
 mkdir tmpbuild_%PY_VER%
 set TEMP=%CD%\tmpbuild_%PY_VER%
+
+set PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1
 REM Bundle all downstream library licenses
 pushd crates\kornia
 cargo-bundle-licenses ^

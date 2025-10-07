@@ -1,5 +1,7 @@
 set -ex
 
+export PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1
+
 pushd crates/kornia
 # Bundle all downstream library licenses
 cargo-bundle-licenses \
