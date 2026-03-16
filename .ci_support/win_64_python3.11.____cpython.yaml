@@ -11,7 +11,7 @@ cxx_compiler:
 glib:
 - '2'
 gstreamer:
-- '1.24'
+- '1.28'
 libjpeg_turbo:
 - '3'
 pin_run_as_build:
