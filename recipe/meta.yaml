@@ -1,5 +1,5 @@
 {% set name = "kornia-rs" %}
-{% set version = "0.1.10" %}
+{% set version = "0.1.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/kornia/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b6f5dd6e1e25e2163648953476a5dada2f6a9e5d8e524f78d1680977152bb179
+  sha256: 8b5962b5c467869467a921864b655e67652a15e853594d571a4e1e84b00c7929
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
