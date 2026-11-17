@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('rust') }}
     - {{ stdlib("c") }}
     - make
-    - pkg-config
+    - pkgconf
     - cmake
     - cargo-bundle-licenses
   host:
@@ -34,7 +34,6 @@ requirements:
     - libjpeg-turbo
     - nasm
     - glib
-    - gtk3
     - gdk-pixbuf  # [osx_arm64]
   run:
     - python
