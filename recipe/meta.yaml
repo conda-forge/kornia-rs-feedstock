@@ -10,7 +10,7 @@ source:
   sha256: b6f5dd6e1e25e2163648953476a5dada2f6a9e5d8e524f78d1680977152bb179
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('rust') }}
     - {{ stdlib("c") }}
     - make
-    - pkg-config
+    - pkgconf
     - cmake
     - cargo-bundle-licenses
   host:
@@ -34,7 +34,6 @@ requirements:
     - libjpeg-turbo
     - nasm
     - glib
-    - gtk3
     - gdk-pixbuf  # [osx_arm64]
   run:
     - python
